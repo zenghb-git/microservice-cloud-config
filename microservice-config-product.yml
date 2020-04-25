@@ -3,6 +3,7 @@ spring:
   profiles:
     active: dev # 激活开发环境配置
 
+---
 server:
   port: 8001 #端口号
 mybatis:
@@ -37,7 +38,7 @@ eureka:
     instanceId: ${spring.application.name}:${server.port} # 等价于microservice-product:8001
     prefer-ip-address: true #访问路径就会显示成IP地址
     
- ---
+---
 server:
   port: 8001 #端口号
 mybatis:
