@@ -17,8 +17,7 @@ eureka:
   client:
     registerWithEureka:false
     fetchRegistry:false
-    serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka/
+    serviceUrl:http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: false #禁用自我保护机制
 
@@ -37,8 +36,7 @@ eureka:
   client:
     registerWithEureka:false
     fetchRegistry:false
-    serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka/
+    serviceUrl:http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: true #开启自我保护机制    
     
