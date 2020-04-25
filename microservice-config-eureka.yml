@@ -1,4 +1,4 @@
-#注意：如果在记事本上编写，下面的缩进不要使用Tab来缩进，不然报错
+﻿#注意：如果在记事本上编写，下面的缩进不要使用Tab来缩进，不然报错
 spring:
   profiles:
     active: dev # 激活开发环境配置  
@@ -17,7 +17,8 @@ eureka:
   client:
     registerWithEureka:false
     fetchRegistry:false
-    serviceUrl:http://eureka6001.com:6001/eureka/
+    serviceUrl:
+      defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: false #禁用自我保护机制
 
@@ -36,7 +37,8 @@ eureka:
   client:
     registerWithEureka:false
     fetchRegistry:false
-    serviceUrl:http://eureka6001.com:6001/eureka/
+    serviceUrl:
+      defaultZone: http://eureka6001.com:6001/eureka/
   server:
     enable-self-preservation: true #开启自我保护机制    
     
